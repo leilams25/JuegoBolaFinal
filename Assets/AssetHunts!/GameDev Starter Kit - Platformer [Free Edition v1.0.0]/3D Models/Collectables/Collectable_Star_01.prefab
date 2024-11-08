@@ -80,20 +80,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 4137742562029628451}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8798334550254787352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3867852375306228082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7272389d99feabc4f9c69c5449fc0ee8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spinSpeed: 30
-  direction: {x: 0, y: 1, z: 0}
 --- !u!64 &2290691616143381257
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -108,3 +94,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 9183383212603093908, guid: 442b54791910c754b80201f27d43a6c3, type: 3}
+--- !u!114 &8798334550254787352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3867852375306228082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7272389d99feabc4f9c69c5449fc0ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spinSpeed: 30
+  direction: {x: 0, y: 1, z: 0}

@@ -9,8 +9,9 @@ public class Player : MonoBehaviour
     [SerializeField] Rigidbody rb;
     [SerializeField] float velocity;
     [SerializeField] float slowTime;
-
-    [SerializeField] float jumpForce = 5f; 
+    [SerializeField] float speedTime;
+    [SerializeField] float jumpForce = 5f;
+    private float puntos = 0;
     private bool isGrounded = true;
 
 
@@ -43,7 +44,18 @@ public class Player : MonoBehaviour
             Time.timeScale = 1f;
 
         }
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
 
+            Time.timeScale = Time.timeScale * speedTime;
+
+        }
+
+        else if (Input.GetKeyUp(KeyCode.Q))
+        {
+            Time.timeScale = 1f;
+
+        }
     }
 
 
@@ -78,7 +90,7 @@ public class Player : MonoBehaviour
     {
        if(other.gameObject.CompareTag("Pick Up"))
         {
-
+            puntos++;
             other.gameObject.SetActive(false);
         }
     }

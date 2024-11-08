@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Coin : MonoBehaviour
 {
-
+    
     private void OnTriggerEnter(Collider other)
     {
         Player component = other.GetComponent<Player>();
