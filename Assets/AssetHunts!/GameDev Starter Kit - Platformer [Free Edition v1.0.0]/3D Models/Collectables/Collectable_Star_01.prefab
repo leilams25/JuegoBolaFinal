@@ -108,3 +108,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spinSpeed: 30
   direction: {x: 0, y: 1, z: 0}
+--- !u!114 &1219759330333648121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3867852375306228082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09cb6f2e8ae5e894194b94206aff8350, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

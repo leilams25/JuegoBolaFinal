@@ -6,6 +6,7 @@ public class Boudnes : MonoBehaviour
 {
     [SerializeField] Rigidbody rb;
     [SerializeField] float BoundForce = 5f;
+    [SerializeField] float BoundForceWaterBall = 5f;
     private bool isTouching = true;
     void Start()
     {
@@ -22,6 +23,13 @@ public class Boudnes : MonoBehaviour
          
             rb.AddForce(Vector3.up * BoundForce, ForceMode.Impulse);
             
+        }
+
+        if (collision.gameObject.CompareTag("BoundBalls"))
+        {
+
+            rb.AddForce(Vector3.up * BoundForceWaterBall, ForceMode.Impulse);
+
         }
     }
 

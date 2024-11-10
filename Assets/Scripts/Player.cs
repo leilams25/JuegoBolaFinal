@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Timeline;
-
+using UnityEngine.UI;
+using TMPro;
 public class Player : MonoBehaviour
 {
     [SerializeField] Rigidbody rb;
@@ -11,9 +12,9 @@ public class Player : MonoBehaviour
     [SerializeField] float slowTime;
     [SerializeField] float speedTime;
     [SerializeField] float jumpForce = 5f;
-    private float puntos = 0;
+    private int points = 0;
     private bool isGrounded = true;
-
+    [SerializeField] TextMeshProUGUI text;
 
     private float zInput;
     private float xInput;
@@ -56,6 +57,11 @@ public class Player : MonoBehaviour
             Time.timeScale = 1f;
 
         }
+
+
+
+
+
     }
 
 
@@ -90,7 +96,10 @@ public class Player : MonoBehaviour
     {
        if(other.gameObject.CompareTag("Pick Up"))
         {
-            puntos++;
+
+            Debug.Log("+ 1 punto");
+            points++;
+            text.text = "Puntos: " + points.ToString();
             other.gameObject.SetActive(false);
         }
     }
